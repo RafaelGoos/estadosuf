@@ -53,13 +53,40 @@
   cursor: pointer;
 }
 
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; 
+}
+
+.searchTerm {
+  width: calc(50% - 30px);
+  height: 20px; 
+  padding: 10px; 
+  border: 2px solid white; 
+  border-radius: 5px; 
+  margin-right: 30px;
+  background-color: rgb(20, 19, 19);
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .search-icon svg {
   fill: white; 
 }
 
-.label-container {
-  position: relative;
+.city-label {
+  margin-right: 20px; /* Reduzido o espaçamento entre o texto e o campo de busca */
 }
+
 
 
 @media (max-width: 768px) {

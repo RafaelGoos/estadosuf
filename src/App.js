@@ -3,6 +3,8 @@ import StateSelect from "./components/StateSelect";
 import CityList from "./components/CityList";
 import "./App.css";
 
+import logoImage from "./logo.png"; 
+
 function App() {
   const [selectedState, setSelectedState] = useState(null);
 
@@ -31,7 +33,7 @@ function App() {
             Voltar
           </button>
         )}
-        <img src="../logotipo.png" alt="Logo" className="logo" />
+        <img src={logoImage} alt="Logo" className="logo" />
         {!selectedState ? (
           <StateSelect onSelect={handleStateSelect} />
         ) : (
