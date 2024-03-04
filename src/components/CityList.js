@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getCitiesByState } from "../services/api";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./StateCity.css";
 
 function CityList({ state }) {
@@ -25,25 +27,36 @@ function CityList({ state }) {
     <div className="select-div">
       <label className="label-container">
         <span className="city-label">Cidade de {state}</span>
-        <input
-          type="text"
-          className="searchTerm open"
-          placeholder="Pesquisar..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <div className="input-container">
+          <input
+            type="text"
+            className="input"
+            placeholder="Pesquisar..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <i>
+            <FontAwesomeIcon icon={faSearch} />
+          </i>
+        </div>
       </label>
 
       <div className="select-list">
-        {filteredCities.map((city) => (
-          <button
-            key={city.id}
-            onClick={() => handleCityClick(city)}
-            className={`city-select ${selectedCity === city ? "selected" : ""}`}
-          >
-            {city.nome}
-          </button>
-        ))}
+        {filteredCities.length === 0 ? (
+          <p className="not-found">Cidade não encontrada</p>
+        ) : (
+          filteredCities.map((city) => (
+            <button
+              key={city.id}
+              onClick={() => handleCityClick(city)}
+              className={`city-select ${
+                selectedCity === city ? "selected" : ""
+              } ${searchTerm.length >= 2 ? "full-width" : ""}`}
+            >
+              {city.nome}
+            </button>
+          ))
+        )}
       </div>
     </div>
   );

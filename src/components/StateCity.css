@@ -37,20 +37,17 @@
   text-overflow: ellipsis; 
 }
 
+.not-found {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .select-list button.selected {
   background-color: red;
 }
 
 .select-list button:hover {
   background-color: red;
-}
-
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 30px; 
-  transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .label-container {
@@ -60,34 +57,38 @@
   position: relative; 
 }
 
-.searchTerm {
-  width: calc(50% - 30px);
-  height: 20px; 
-  padding: 10px; 
-  border: 2px solid white; 
-  border-radius: 5px; 
-  margin-right: 30px;
-  background-color: rgb(20, 19, 19);
+.input {
+  padding: 10px 30px 5px 4px; 
+  border: none; 
+  border-bottom: 2px solid #ccc; 
+  background: none;
+  font-size: 16px;
+  outline: none;
+  width: 70%;
   color: white;
 }
 
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px; 
-  transform: translateY(-50%);
-  cursor: pointer;
+.input-container {
+  position: relative;
 }
 
-.search-icon svg {
-  fill: white; 
+.input-container i {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  color: #ffffff; 
 }
+
 
 .city-label {
-  margin-right: 20px; /* Reduzido o espaçamento entre o texto e o campo de busca */
+  margin-right: 20px; 
 }
 
-
+.full-width {
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   .select-list button {
