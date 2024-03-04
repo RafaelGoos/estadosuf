@@ -11,7 +11,7 @@ function CityList({ state }) {
 
   useEffect(() => {
     if (state) {
-      getCitiesByState(state).then((data) => setCities(data));
+      getCitiesByState(state.sigla).then((data) => setCities(data));
     }
   }, [state]);
 
@@ -26,7 +26,7 @@ function CityList({ state }) {
   return (
     <div className="select-div">
       <label className="label-container">
-        <span className="city-label">Cidade de {state}</span>
+        <span className="city-label">Cidades de {state.nome}</span>
         <div className="input-container">
           <input
             type="text"
@@ -45,9 +45,9 @@ function CityList({ state }) {
         {filteredCities.length === 0 ? (
           <p className="not-found">Cidade não encontrada</p>
         ) : (
-          filteredCities.map((city) => (
+          filteredCities.map((city, index) => (
             <button
-              key={city.id}
+              key={index}
               onClick={() => handleCityClick(city)}
               className={`city-select ${
                 selectedCity === city ? "selected" : ""

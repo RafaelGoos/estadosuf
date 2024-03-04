@@ -40,7 +40,6 @@ function App() {
           <>
             <CityList
               state={selectedState}
-              stateFullName={selectedState.nome}
             />
           </>
         )}
