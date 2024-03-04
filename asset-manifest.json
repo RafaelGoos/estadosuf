@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/estadosuf/static/css/main.608462bf.css",
+    "main.js": "/estadosuf/static/js/main.8119abeb.js",
+    "index.html": "/estadosuf/index.html",
+    "main.608462bf.css.map": "/estadosuf/static/css/main.608462bf.css.map",
+    "main.8119abeb.js.map": "/estadosuf/static/js/main.8119abeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.608462bf.css",
+    "static/js/main.8119abeb.js"
+  ]
+}
