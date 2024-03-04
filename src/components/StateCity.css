@@ -1,0 +1,75 @@
+.select-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.select-div label {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.city-select {
+  width: calc(20% - 10px);
+}
+
+.state-select {
+  width: calc(33.33% - 10px);
+}
+
+.select-list button {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  height: auto;
+  min-height: 50px;
+  padding: 5px 10px;
+  background-color: #777;
+  color: #fff;
+  font-size: 1.1em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.select-list button.selected {
+  background-color: red;
+}
+
+.select-list button:hover {
+  background-color: red;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-icon svg {
+  fill: white; 
+}
+
+.label-container {
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  .select-list button {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .select-list button {
+    width: calc(100% - 10px);
+  }
+}
