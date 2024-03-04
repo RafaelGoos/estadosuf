@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/estadosuf/static/css/main.70e71ff3.css",
-    "main.js": "/estadosuf/static/js/main.ee4241c3.js",
+    "main.css": "/estadosuf/static/css/main.a6cc505a.css",
+    "main.js": "/estadosuf/static/js/main.5e16386e.js",
     "static/media/logo.png": "/estadosuf/static/media/logo.cda40025bdb0351cdf30.png",
     "index.html": "/estadosuf/index.html",
-    "main.70e71ff3.css.map": "/estadosuf/static/css/main.70e71ff3.css.map",
-    "main.ee4241c3.js.map": "/estadosuf/static/js/main.ee4241c3.js.map"
+    "main.a6cc505a.css.map": "/estadosuf/static/css/main.a6cc505a.css.map",
+    "main.5e16386e.js.map": "/estadosuf/static/js/main.5e16386e.js.map"
   },
   "entrypoints": [
-    "static/css/main.70e71ff3.css",
-    "static/js/main.ee4241c3.js"
+    "static/css/main.a6cc505a.css",
+    "static/js/main.5e16386e.js"
   ]
 }
